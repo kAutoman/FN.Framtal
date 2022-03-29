@@ -1,0 +1,20 @@
+﻿<UserControl x:Class="FN.Framtal.UserControls.ResultBox"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:FN.Framtal.UserControls"
+             mc:Ignorable="d" 
+             d:DesignHeight="24" Height="24" MaxHeight="24"
+             d:DesignWidth="190" Width="190" MaxWidth="190">
+
+    <DockPanel>
+        <Polygon DockPanel.Dock="Left" Points="0 0 24 12 0 24"  Fill="{DynamicResource DarkBrush}" />
+        <Border x:Name="PrefixTextBlockBorder"  Width="24" Height="24">
+            <TextBlock x:Name="PrefixTextBlock"  HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        </Border>
+        <Border x:Name="NumericTextBoxBorder" Width="142" Height="24" Padding="3" BorderThickness="0 1 1 1" Background="{DynamicResource LightBrush}">
+            <local:NumericTextBox x:Name="NumericTextBox" BorderThickness="0"/>
+        </Border>
+    </DockPanel>
+</UserControl>

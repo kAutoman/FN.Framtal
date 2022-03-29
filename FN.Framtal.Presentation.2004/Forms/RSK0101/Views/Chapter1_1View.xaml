@@ -1,0 +1,35 @@
+﻿<UserControl x:Class="FN.Framtal.Presentation._2004.Forms.RSK0101.Views.Chapter1_1View"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="144" Height="144" MaxHeight="144"
+             d:DesignWidth="700" Width="700" MaxWidth="700"
+             >
+    <Grid Background="{StaticResource DefaultBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="2*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Border Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2">
+            <DockPanel  Background="{StaticResource LightBrush}">
+                <TextBlock Width="150" VerticalAlignment="Top" Margin="10,0,0,0" FontWeight="Bold">Umsókn um lækkun vegna<LineBreak /> framfærslu ungmenna:</TextBlock>
+                <TextBlock
+                    Margin="20,5,0,0"
+                    VerticalAlignment="Top"
+                    FontSize="{StaticResource Chapter2SmallTextFontSize}"
+                    TextWrapping="Wrap">Heimilt er að veita lækkun á tekjuskattsstofni ef framteljandi hefur á framfæri sínu ungmenni, sem hefur ekki nægar tekjur til eigin framfærslu,<LineBreak /> t.d. vegna náms. Tilgreina skal nafn skóla eða ástæðu umsóknar. Hér er einkum átt við aldurinn 16-21 árs. Sjá nánar í leiðbeiningum.</TextBlock>
+            </DockPanel>
+        </Border>
+
+        <Border Grid.Column="0" Grid.Row="1" BorderThickness="1 0 1 1">
+            <DataGrid/>
+        </Border>
+
+    </Grid>
+</UserControl>

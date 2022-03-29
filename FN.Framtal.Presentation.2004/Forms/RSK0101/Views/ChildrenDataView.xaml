@@ -1,0 +1,86 @@
+﻿<UserControl x:Class="FN.Framtal.Presentation._2004.Forms.RSK0101.Views.ChildrenDataView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="144" Height="144" MaxHeight="144"
+             d:DesignWidth="700" Width="700" MaxWidth="700"
+             >
+
+    <Grid Background="{StaticResource DefaultBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="75"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="20"/>
+            <ColumnDefinition Width="150"/>
+        </Grid.ColumnDefinitions>
+
+        <Border Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2" Background="{StaticResource LightBrush}" BorderThickness="1 1 1 0">
+            <TextBlock x:Name="BornTextBlock" FontWeight="Bold" Margin="5,0,0,0" Text="Börn fædd 1989 og síðar" VerticalAlignment="Center" TextWrapping="Wrap"/>
+        </Border>
+
+        <Border Grid.Column="0" Grid.Row="1" Grid.RowSpan="5" BorderThickness="1 1 1 1" Background="{StaticResource LightBrush}">
+            <TextBlock 
+                FontSize="{StaticResource Chapter2BigTextFontSize}"
+                Margin="3,10,3,0"
+                VerticalAlignment="Top"
+                TextAlignment="Center"
+                TextWrapping="Wrap"
+                Text="Framtaljandi þarf að yfirfara og leiðrétta upplýsingar um börn á framfæri hans."
+                />
+        </Border>
+
+        <Border Grid.Column="1" Grid.Row="1" Grid.RowSpan="5" BorderThickness="0 1 1 1" Background="{StaticResource DefaultBrush}">
+            <DataGrid />
+        </Border>
+
+        <TextBlock Grid.Column="3" Grid.Row="0"
+                   Margin="5 5 0 5"
+                   TextWrapping="Wrap"
+                   TextAlignment="Right"
+                   FontSize="{StaticResource Chapter2PrefixTextFontSize}"
+                   FontWeight="Bold" VerticalAlignment="Center"
+                   Text="Einstætt foreldri"/>
+
+        <Border Grid.Column="3" Grid.Row="1" Grid.RowSpan="5" Background="{StaticResource LightBrush}">
+            <Grid >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="2*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="2*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <TextBlock Grid.Column="0" Grid.Row="0"
+                           Margin="5"
+                           TextWrapping="Wrap"
+                           FontSize="{StaticResource Chapter2BigTextFontSize}"
+                           VerticalAlignment="Center"
+                           Text="Ef framteljandi er einstætt foreldri skal staðfesta það með því að setja X í þennan reit."/>
+
+                <CheckBox Grid.Column="1" Grid.Row="0" Margin="5" VerticalAlignment="Center" HorizontalAlignment="Center" BorderThickness="1" BorderBrush="Black"/>
+
+                <TextBlock Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2"
+                           Margin="5"
+                           TextWrapping="Wrap"
+                           FontSize="{StaticResource Chapter2BigTextFontSize}"
+                           VerticalAlignment="Center"
+                           Text="Sjá nánari skýringar í leiðbeiningum."/>
+
+
+            </Grid>
+        </Border>
+    </Grid>
+</UserControl>

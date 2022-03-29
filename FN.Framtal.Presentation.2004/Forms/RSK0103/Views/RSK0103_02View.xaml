@@ -1,0 +1,60 @@
+﻿<UserControl x:Class="FN.Framtal.Presentation._2004.Forms.RSK0103.Views.RSK0103_02View"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:controls="clr-namespace:FN.Framtal.UserControls;assembly=FN.Framtal.UserControls"
+             xmlns:views="clr-namespace:FN.Framtal.Presentation._2004.Forms.RSK0103.Views"
+             mc:Ignorable="d" 
+             Width="794" Height="1126">
+
+    <Grid Background="{StaticResource DefaultBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="62"/>
+            <RowDefinition Height="106"/>
+            <RowDefinition Height="52"/>
+            <RowDefinition Height="26"/>
+            <RowDefinition Height="26"/>
+            <RowDefinition Height="26"/>
+            <RowDefinition Height="26"/>
+            <RowDefinition Height="26"/>
+            <RowDefinition Height="26"/>
+            <RowDefinition Height="26"/>
+            <RowDefinition Height="156"/>
+            <RowDefinition Height="26"/>
+            <RowDefinition Height="156"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="566"/>
+            <ColumnDefinition Width="76"/>
+            <ColumnDefinition Width="38"/>
+        </Grid.ColumnDefinitions>
+
+        <Rectangle Grid.Column="3" Grid.RowSpan="17" Fill="{StaticResource DarkBrush}"></Rectangle>
+
+        <TextBlock Grid.Column="1" Grid.Row="1" TextAlignment="Justify" TextWrapping="Wrap">Ef dánarbúið hefur með höndum atvinnurekstur þá skal gera grein fyrir honum á skattframtali rekstraraðila,
+            RSK 1.04. Færa skal niðurstöðutölur af því inn á þetta eyðublað. Söluhagnaði hlutabréfa skal gera grein
+            fyrir á eyðublaði RSK 3.09. Söluhagnaði fasteigna skal gera grein fyrir á eyðublaði RSK 3.02. Greinargerðir
+            þessar skulu fylgja framtali. Sundurliða skal innstæður í bönkum og sparisjóðum og hlutabréfaeign í
+            töflum hér að neðan. Ef frekari sundurliðunar er þörf skal nota eyðublað RSK 3.01.</TextBlock>
+
+            <TextBlock Grid.Column="1" Grid.Row="2"
+                       TextAlignment="Center"
+                       VerticalAlignment="Center"
+                       FontSize="{StaticResource Chapter1FontSize}"
+                       FontWeight="Bold">Greinargerð um eignabreytingar og athugasemdir framteljanda.</TextBlock>
+
+        <Border Grid.Column="1" Grid.Row="3"></Border>
+        <Border Grid.Column="1" Grid.Row="4" BorderThickness="1 0 1 1"></Border>
+        <Border Grid.Column="1" Grid.Row="5" BorderThickness="1 0 1 1"></Border>
+        <Border Grid.Column="1" Grid.Row="6" BorderThickness="1 0 1 1"></Border>
+        <Border Grid.Column="1" Grid.Row="7" BorderThickness="1 0 1 1"></Border>
+        <Border Grid.Column="1" Grid.Row="8" BorderThickness="1 0 1 1"></Border>
+
+        <views:InnstaedurIBonkumOgSparisjodumView Grid.Column="1" Grid.Row="10"></views:InnstaedurIBonkumOgSparisjodumView>
+        <views:HlutabrefOgStofnfjarbrefSparisjodaView Grid.Column="1" Grid.Row="12"></views:HlutabrefOgStofnfjarbrefSparisjodaView>
+
+    </Grid>
+</UserControl>

@@ -1,0 +1,58 @@
+﻿<UserControl x:Class="FN.Framtal.UserControls.Chapter2_7"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:FN.Framtal.UserControls"
+             mc:Ignorable="d" 
+              MinWidth="350"
+            
+              >
+
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Theme.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </UserControl.Resources>
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+
+        <Border Padding="3 3 0 3" Background="White">
+            <Border x:Name="PrefixBorder" MinWidth="26" MinHeight="25" Style="{StaticResource BorderMediumColorStyle}"
+                    VerticalAlignment="Top" BorderThickness="1 1 0 1">
+                <TextBlock x:Name="PrefixTextBlock" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="{StaticResource Chapter2PrefixTextFontSize}" FontWeight="Bold" />
+            </Border>
+        </Border>
+
+        <Border Grid.Column="1" Padding="0 3 0 3" Background="{StaticResource MediumBrush }">
+            <Border  Style="{StaticResource BorderStyle}" BorderThickness="1 1 1 1">
+                <DockPanel>
+
+                    <TextBlock 
+                    x:Name="TitleTextBlock" 
+                    DockPanel.Dock="Left"
+                    Margin="0,0,5,0"
+                    FontSize="{StaticResource Chapter2BigTextFontSize}"
+                    TextWrapping="Wrap"
+                    FontWeight="Bold"
+                    VerticalAlignment="Center"/>
+
+                    <TextBlock
+                    x:Name="DescriptionTextBlock"
+                    DockPanel.Dock="Left"
+                    TextWrapping="Wrap"
+                    VerticalAlignment="Center"
+                    FontSize="{StaticResource Chapter2BigTextFontSize}"
+                />
+                </DockPanel>
+            </Border>
+        </Border>
+    </Grid>
+</UserControl>

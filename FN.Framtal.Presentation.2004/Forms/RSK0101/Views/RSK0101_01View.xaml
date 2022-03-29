@@ -1,0 +1,86 @@
+﻿<UserControl
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:controls="clr-namespace:FN.Framtal.UserControls;assembly=FN.Framtal.UserControls"
+      xmlns:dxe="http://schemas.devexpress.com/winfx/2008/xaml/editors"
+      xmlns:views="clr-namespace:FN.Framtal.Presentation._2004.Forms.RSK0101.Views"
+      x:Class="FN.Framtal.Presentation._2004.Forms.RSK0101.Views.RSK0101_01View"
+      mc:Ignorable="d" 
+      Width="794" Height="1126">
+
+    <Grid Background="{StaticResource DefaultBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="64"/>
+            <RowDefinition Height="190"/>
+            <RowDefinition Height="35"/>
+            <RowDefinition Height="144"/>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="48"/>
+            <RowDefinition Height="48"/>
+            <RowDefinition Height="144"/>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="144"/>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="96"/>
+            <RowDefinition Height="110"/>
+            <RowDefinition Height="43"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="30"/>
+            <ColumnDefinition Width="19"/>
+            <ColumnDefinition Width="26"/>
+            <ColumnDefinition Width="700"/>
+            <ColumnDefinition Width="19"/>
+        </Grid.ColumnDefinitions>
+
+        <Rectangle Grid.Column="0" Grid.RowSpan="14" Fill="{StaticResource DarkBrush}"></Rectangle>
+
+        <Grid Grid.Column="3" Grid.Row="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <TextBlock Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="24" FontWeight="Bold">RSK</TextBlock>
+            <TextBlock Grid.Column="1" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="24" FontWeight="Bold">SKATTFRAMTAL 2005</TextBlock>
+
+        </Grid>
+
+        <views:HeaderView Grid.Column="3" Grid.Row="1"></views:HeaderView>
+
+        <views:ChildrenDataView Grid.Column="3" Grid.Row="3"></views:ChildrenDataView>
+
+        <views:JointAssessmentView Grid.Column="3" Grid.Row="5"></views:JointAssessmentView>
+
+        <controls:Chapter1 Grid.Column="2" Grid.Row="6" Grid.ColumnSpan="2" ChapterNumber="1" ChapterText="Hjá hjónum og sambúðarfólki er nóg að annað fylli út liði 1.1 og 1.2"/>
+
+        <controls:Chapter2 Grid.Column="2" Grid.Row="7" VerticalAlignment="Top" ChapterNumber="1.1"></controls:Chapter2>
+        <views:Chapter1_1View Grid.Column="3" Grid.Row="7"></views:Chapter1_1View>
+
+        <controls:Chapter2 Grid.Column="2" Grid.Row="9" VerticalAlignment="Top" ChapterNumber="1.2"></controls:Chapter2>
+        <views:Chapter1_2View Grid.Column="3" Grid.Row="9"></views:Chapter1_2View>
+
+        <controls:Chapter2 Grid.Column="2" Grid.Row="11" VerticalAlignment="Top" ChapterNumber="1.3"></controls:Chapter2>
+        <views:Chapter1_3View Grid.Column="3" Grid.Row="11"></views:Chapter1_3View>
+
+        <Grid Grid.Column="3" Grid.Row="13">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <TextBlock Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="{StaticResource Chapter2BigTextFontSize}" FontWeight="Bold">RSK 1.01</TextBlock>
+            <TextBlock Grid.Column="1" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="{StaticResource Chapter2BigTextFontSize}" FontWeight="Bold">Bls. 1</TextBlock>
+
+        </Grid>
+
+    </Grid>
+</UserControl>

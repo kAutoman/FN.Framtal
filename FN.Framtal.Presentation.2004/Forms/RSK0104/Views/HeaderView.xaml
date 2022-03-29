@@ -1,0 +1,72 @@
+﻿<UserControl x:Class="FN.Framtal.Presentation._2004.Forms.RSK0104.Views.HeaderView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:FN.Framtal.Presentation._2004.Forms.RSK0104.Views"
+             xmlns:controls="clr-namespace:FN.Framtal.UserControls;assembly=FN.Framtal.UserControls"
+             mc:Ignorable="d" 
+             d:DesignHeight="184" d:DesignWidth="707">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="38"/>
+            <RowDefinition Height="38"/>
+            <RowDefinition Height="12"/>
+            <RowDefinition Height="48"/>
+            <RowDefinition Height="48"/>
+            
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="355"/>
+            <ColumnDefinition Width="12"/>
+            <ColumnDefinition Width="160"/>
+            <ColumnDefinition Width="107"/>
+            <ColumnDefinition Width="73"/>
+
+        </Grid.ColumnDefinitions>
+
+        <Border Grid.Column="0" Grid.Row="3" Grid.RowSpan="3" BorderThickness="1">
+            <StackPanel>
+                <TextBlock Margin="5 0 0 0" FontSize="{StaticResource Chapter2SmallTextFontSize}">Nafn</TextBlock>
+                <TextBox Margin="5 3 5 0"></TextBox>
+                <TextBox Margin="5 3 5 0"></TextBox>
+                <DockPanel Margin="5 3 5 0">
+                    <TextBox Width="52"></TextBox>
+                    <TextBox Margin="5 0 0 0"></TextBox>
+                </DockPanel>
+            </StackPanel>
+        </Border>
+
+        <Border Grid.Row="0" Grid.RowSpan="2" Grid.Column="0">
+            <controls:SkattframtalidBerist></controls:SkattframtalidBerist>
+        </Border>
+
+        <controls:TextBoxWithDescription Grid.Column="2" Grid.Row="0" Title="Kennitala"/>
+        
+        <Border Grid.Column="3" Grid.Row="0" Grid.ColumnSpan="2" BorderThickness="0 1 1 1">
+            <DockPanel Background="{StaticResource LightBrush}">
+                <Border DockPanel.Dock="Bottom" Background="{StaticResource LightBrush}" Padding="3" BorderThickness="0">
+                    <TextBox BorderThickness="0" ></TextBox>
+                </Border>
+                <TextBlock DockPanel.Dock="Bottom" Padding="3 0 0 0" FontSize="{StaticResource Chapter2SmallTextFontSize}" VerticalAlignment="Bottom">0020</TextBlock>
+            </DockPanel>
+        </Border>
+        
+        <controls:TextBoxWithDescription Title="Sveitarfélag" Grid.Column="2" Grid.Row="1" Grid.ColumnSpan="2" BorderThickness="1 0 1 1"/>
+
+        <Border Grid.Column="4" Grid.Row="1" BorderThickness="0 0 1 1">
+            <DockPanel Background="{StaticResource LightBrush}">
+                <Border DockPanel.Dock="Bottom" Background="{StaticResource LightBrush}" Padding="3" BorderThickness="0">
+                    <TextBox BorderThickness="0" ></TextBox>
+                </Border>
+                <TextBlock DockPanel.Dock="Bottom" Padding="3 0 0 0" FontSize="{StaticResource Chapter2SmallTextFontSize}" VerticalAlignment="Bottom">Sveitarfélagsnúmer</TextBlock>
+            </DockPanel>
+        </Border>
+
+        <controls:TextBoxWithDescription Grid.Column="2" Grid.Row="3" Grid.ColumnSpan="3" Title="Framtal unnið af:"/>
+
+        <controls:TextBoxWithDescription Grid.Column="2" Grid.Row="4" Grid.ColumnSpan="3" Title="Áritun löggilts endurskoðanda á ársreikning"/>
+
+    </Grid>
+</UserControl>

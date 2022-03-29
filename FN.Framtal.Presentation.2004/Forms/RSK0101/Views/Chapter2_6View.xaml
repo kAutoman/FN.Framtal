@@ -1,0 +1,122 @@
+﻿<UserControl x:Class="FN.Framtal.Presentation._2004.Forms.RSK0101.Views.Chapter2_6View"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+            xmlns:local="clr-namespace:FN.Framtal.Presentation._2004.Forms.RSK0101.Views"
+             xmlns:controls="clr-namespace:FN.Framtal.UserControls;assembly=FN.Framtal.UserControls"
+             mc:Ignorable="d" 
+             d:DesignHeight="168" Height="168" MaxHeight="168"
+             d:DesignWidth="688" Width="688" MaxWidth="688">
+
+    <Grid Background="{StaticResource DefaultBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="498"/>
+            <ColumnDefinition Width="24"/>
+            <ColumnDefinition Width="166"/>
+        </Grid.ColumnDefinitions>
+
+        <Border Grid.Column="0" Grid.Row="0" Background="{DynamicResource LightBrush}">
+            <TextBlock 
+                   VerticalAlignment="Center"
+                   TextAlignment="Left"
+                   Margin="10,0,0,0"
+                   FontWeight="Bold"
+                   Text="Frádráttur"/>
+        </Border>
+
+        <Border Grid.Column="0" Grid.Row="1" BorderThickness="1 0 1 1">
+            <TextBlock Margin="10 0 0 0" FontSize="{StaticResource Chapter2MediumTextFontSize}" VerticalAlignment="Center">Frádráttur á móti ökutækjastyrk skv. RSK 3.04</TextBlock>
+        </Border>
+
+        <Border Grid.Column="0" Grid.Row="2" BorderThickness="1 0 1 1">
+            <TextBlock Margin="10 0 0 0" FontSize="{StaticResource Chapter2MediumTextFontSize}" VerticalAlignment="Center">Frádráttur á móti dagpeningum skv. RSK 3.11</TextBlock>
+        </Border>
+
+        <Border Grid.Column="0" Grid.Row="3" BorderThickness="1 0 1 1">
+            <TextBlock Margin="10 0 0 0" FontSize="{StaticResource Chapter2MediumTextFontSize}" VerticalAlignment="Center">Iðgjald, greitt í lífeyrissjóð á árinu - að hámarki 4% af launum</TextBlock>
+        </Border>
+
+        <Border Grid.Column="0" Grid.Row="4" BorderThickness="1 0 1 1">
+            <TextBlock Margin="10 0 0 0" FontSize="{StaticResource Chapter2MediumTextFontSize}" VerticalAlignment="Center">Iðgjald, greitt á árinu vegna viðbótarlífeyrissparnaðar - að hámarki 4% af launum</TextBlock>
+        </Border>
+
+        <Border Grid.Column="0" Grid.Row="5" BorderThickness="1 0 1 1">
+            <TextBlock Margin="10 0 0 0" FontSize="{StaticResource Chapter2MediumTextFontSize}" VerticalAlignment="Center">Frádráttur á móti náms-, rannsóknar- og vísindastyrkjum skv. meðfylgjandi greinargerð</TextBlock>
+        </Border>
+
+        <Border Grid.Column="0" Grid.Row="6" BorderThickness="1 0 1 1">
+            <TextBlock Margin="10 0 0 0" FontSize="{StaticResource Chapter2MediumTextFontSize}" VerticalAlignment="Center">Frádráttur frá öðrum styrkjum og starfstengdum greiðslum skv. meðfylgjandi greinargerð</TextBlock>
+        </Border>
+
+        <DockPanel  Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="2">
+            <Polygon DockPanel.Dock="Left" Points="0 0 24 12 0 24"  Fill="{DynamicResource DarkBrush}" />
+            <Border Width="24" Height="24" BorderThickness="1 1 1 0">
+                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Text="32"/>
+            </Border>
+            <Border Width="142" Height="24" Padding="3" BorderThickness="0 1 1 0" Background="{DynamicResource LightBrush}">
+                <controls:NumericTextBox BorderThickness="0"/>
+            </Border>
+        </DockPanel>
+
+        <DockPanel  Grid.Column="1" Grid.Row="2" Grid.ColumnSpan="2">
+            <Polygon DockPanel.Dock="Left" Points="0 0 24 12 0 24"  Fill="{DynamicResource DarkBrush}" />
+            <Border Width="24" Height="24" BorderThickness="1 1 1 0">
+                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Text="33"/>
+            </Border>
+            <Border Width="142" Height="24" Padding="3" BorderThickness="0 1 1 0" Background="{DynamicResource LightBrush}">
+                <controls:NumericTextBox BorderThickness="0"/>
+            </Border>
+        </DockPanel>
+
+        <DockPanel  Grid.Column="1" Grid.Row="3" Grid.ColumnSpan="2">
+            <Polygon DockPanel.Dock="Left" Points="0 0 24 12 0 24"  Fill="{DynamicResource DarkBrush}" />
+            <Border Width="24" Height="24" BorderThickness="1 1 1 0">
+                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Text="162"/>
+            </Border>
+            <Border Width="142" Height="24" Padding="3" BorderThickness="0 1 1 0" Background="{DynamicResource LightBrush}">
+                <controls:NumericTextBox BorderThickness="0"/>
+            </Border>
+        </DockPanel>
+
+        <DockPanel  Grid.Column="1" Grid.Row="4" Grid.ColumnSpan="2">
+            <Polygon DockPanel.Dock="Left" Points="0 0 24 12 0 24"  Fill="{DynamicResource DarkBrush}" />
+            <Border Width="24" Height="24" BorderThickness="1 1 1 0">
+                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Text="160"/>
+            </Border>
+            <Border Width="142" Height="24" Padding="3" BorderThickness="0 1 1 0" Background="{DynamicResource LightBrush}">
+                <controls:NumericTextBox BorderThickness="0"/>
+            </Border>
+        </DockPanel>
+
+        <DockPanel  Grid.Column="1" Grid.Row="5" Grid.ColumnSpan="2">
+            <Polygon DockPanel.Dock="Left" Points="0 0 24 12 0 24"  Fill="{DynamicResource DarkBrush}" />
+            <Border Width="24" Height="24" BorderThickness="1 1 1 0">
+                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Text="149"/>
+            </Border>
+            <Border Width="142" Height="24" Padding="3" BorderThickness="0 1 1 0" Background="{DynamicResource LightBrush}">
+                <controls:NumericTextBox BorderThickness="0"/>
+            </Border>
+        </DockPanel>
+
+        <DockPanel  Grid.Column="1" Grid.Row="6" Grid.ColumnSpan="2">
+            <Polygon DockPanel.Dock="Left" Points="0 0 24 12 0 24"  Fill="{DynamicResource DarkBrush}" />
+            <Border Width="24" Height="24" BorderThickness="1 1 1 1">
+                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Text="157"/>
+            </Border>
+            <Border Width="142" Height="24" Padding="3" BorderThickness="0 1 1 1" Background="{DynamicResource LightBrush}">
+                <controls:NumericTextBox BorderThickness="0"/>
+            </Border>
+        </DockPanel>
+
+    </Grid>
+</UserControl>

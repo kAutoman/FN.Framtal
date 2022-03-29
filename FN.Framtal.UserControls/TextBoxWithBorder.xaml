@@ -1,0 +1,15 @@
+﻿<UserControl x:Class="FN.Framtal.UserControls.TextBoxWithBorder"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:FN.Framtal.UserControls"
+             mc:Ignorable="d" 
+             d:DesignHeight="22" d:DesignWidth="755">
+    <Grid>
+        <Border BorderThickness="1" BorderBrush="Black">
+            <TextBox Name="Text" />
+        </Border>
+            
+    </Grid>
+</UserControl>

@@ -1,0 +1,39 @@
+﻿<UserControl x:Class="FN.Framtal.UserControls.WhiteBoxWithTitleAndDescription"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:FN.Framtal.UserControls"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Theme.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </UserControl.Resources>
+
+    <!--<DockPanel >
+        <TextBlock x:Name="TitleBlock" DockPanel.Dock="Top" FontSize="{StaticResource Chapter2SmallTextFontSize}"/>
+        <TextBlock x:Name="DescriptionBlock" DockPanel.Dock="Top" FontSize="{StaticResource Chapter1FontSize}" TextAlignment="Center" VerticalAlignment="Center"/>
+    </DockPanel>-->
+
+    <Border>
+        <Border.Style>
+            <Style TargetType="Border" BasedOn="{StaticResource BorderStyle}">
+                <Style.Triggers>
+                    <DataTrigger Binding="{Binding HasBackgroundColor, RelativeSource={RelativeSource AncestorType=UserControl}}" Value="False">
+                        <Setter Property="Background" Value="Transparent" />
+                    </DataTrigger>
+                </Style.Triggers>
+            </Style>
+        </Border.Style>
+
+        <DockPanel >
+            <TextBlock x:Name="TitleBlock" DockPanel.Dock="Top" FontSize="{StaticResource Chapter2SmallTextFontSize}"/>
+            <TextBlock x:Name="DescriptionBlock" DockPanel.Dock="Top" FontSize="{StaticResource Chapter1FontSize}" TextAlignment="Center" VerticalAlignment="Center"/>
+        </DockPanel>
+    </Border>
+</UserControl>

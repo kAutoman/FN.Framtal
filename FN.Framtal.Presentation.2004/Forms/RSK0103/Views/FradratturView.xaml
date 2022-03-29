@@ -1,0 +1,45 @@
+﻿<UserControl x:Class="FN.Framtal.Presentation._2004.Forms.RSK0103.Views.FradratturView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:FN.Framtal.Presentation._2004.Forms.RSK0103.Views"
+             xmlns:userControls="clr-namespace:FN.Framtal.UserControls;assembly=FN.Framtal.UserControls"
+             mc:Ignorable="d" 
+             d:DesignHeight="156" Height="156" MaxHeight="156"
+             d:DesignWidth="344" Width="344" MaxWidth="344">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="144"/>
+        </Grid.ColumnDefinitions>
+
+        <TextBlock Grid.Column="0" Grid.Row="0" Padding="3 0 0 0" VerticalAlignment="Center" FontWeight="Bold">Frádráttur</TextBlock>
+        <TextBlock Grid.Column="0" Grid.Row="1" Padding="3 0 0 0" VerticalAlignment="Center" FontSize="{StaticResource Chapter2MediumTextFontSize}">Vaxtagjöld</TextBlock>
+        <Border Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="2" Grid.RowSpan="3">
+            <DataGrid></DataGrid>
+        </Border>
+
+        <TextBlock Grid.Column="0" Grid.Row="13" Padding="0 0 10 0"
+                   VerticalAlignment="Bottom"
+                   TextAlignment="Right"
+                   FontWeight="Bold"
+                   FontSize="{StaticResource Chapter2MediumTextFontSize}">Frádráttur alls</TextBlock>
+
+        <Border Grid.Column="1" Grid.Row="1" Background="{StaticResource LightBrush}" BorderThickness="1 1 1 0" Padding="3">
+            <userControls:NumericTextBox ></userControls:NumericTextBox>
+        </Border>
+
+        <Border Grid.Column="1" Grid.Row="5" Background="{StaticResource LightBrush}" BorderThickness="1 0 1 1" Padding="3">
+            <userControls:NumericTextBox ></userControls:NumericTextBox>
+        </Border>
+    </Grid>
+</UserControl>

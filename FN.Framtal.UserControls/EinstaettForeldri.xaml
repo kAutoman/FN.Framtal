@@ -1,0 +1,77 @@
+﻿<UserControl x:Class="FN.Framtal.UserControls.EinstaettForeldri"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:FN.Framtal.UserControls"
+             mc:Ignorable="d" 
+             d:DesignHeight="150" d:DesignWidth="150"
+             >
+
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Theme.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </UserControl.Resources>
+
+    <Border x:Name="CheckBoxWithTitleAndTextBorder" Style="{StaticResource BorderStyle}">
+
+        <DockPanel>
+
+            <TextBlock DockPanel.Dock="Top" Margin="5" Name ="TitleTextBlock" TextWrapping="Wrap" TextAlignment="Right" FontSize="12" FontWeight="Bold" VerticalAlignment="Center">Einstætt foreldri</TextBlock>
+
+            <Border x:Name="GridBorder"  BorderBrush="Black" BorderThickness="0.5">
+
+                <Grid Background="Bisque">
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="2*" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="2*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+
+                    <TextBlock Grid.Row="0" Margin="5" Name ="CheckBoxTextBlock" TextWrapping="Wrap" FontSize="9" VerticalAlignment="Center">Ef framteljandi er einstætt foreldri skal staðfesta það með því að setja X í þennan reit.</TextBlock>
+                    <CheckBox Margin="5" Grid.Column="1" Grid.Row="0" VerticalAlignment="Center" HorizontalAlignment="Center" BorderThickness="0.5" BorderBrush="Black" Checked="CheckBox_Checked"/>
+                    <TextBlock Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="2" Margin="5" Name ="BottomTextBlock" TextWrapping="Wrap" FontSize="10" VerticalAlignment="Center">Sjá nánari skýringar í leiðbeiningum.</TextBlock>
+
+
+                </Grid>
+            </Border>
+
+        </DockPanel>
+    </Border>
+
+    <!--<Border x:Name="CheckBoxWithTitleAndTextBorder" Style="{StaticResource BorderStyle}">
+        
+        <Border x:Name="GridBorder"  BorderBrush="Black" BorderThickness="0.5">
+        
+            <Grid Background="Bisque">
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"  />
+                    <RowDefinition Height="4*" />
+                    <RowDefinition Height="4*" />
+                </Grid.RowDefinitions>
+                
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="3*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <Rectangle Grid.Row="0" Grid.ColumnSpan="2" Fill="AliceBlue" />
+                
+                <TextBlock Grid.Row="1" Margin="5" Name ="CheckBoxTextBlock" TextWrapping="Wrap" FontSize="10" VerticalAlignment="Center">Slysatrygging við heimilisstörf</TextBlock>
+                <CheckBox Margin="5" Grid.Column="1" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center" BorderThickness="0.5" BorderBrush="Black"/>
+                <TextBlock Grid.Column="0" Grid.Row="2" Margin="5" Name ="BotomTextBlock" TextWrapping="Wrap" FontSize="10" VerticalAlignment="Center">Setjið X í reitinn ef óskað er slysatryggingar.</TextBlock>
+
+                
+            </Grid>
+        </Border>
+    </Border>-->
+</UserControl>

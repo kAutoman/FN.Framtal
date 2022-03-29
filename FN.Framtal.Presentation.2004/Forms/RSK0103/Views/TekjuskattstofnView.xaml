@@ -1,0 +1,35 @@
+﻿<UserControl x:Class="FN.Framtal.Presentation._2004.Forms.RSK0103.Views.TekjuskattstofnView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:userControls="clr-namespace:FN.Framtal.UserControls;assembly=FN.Framtal.UserControls"
+             xmlns:views="clr-namespace:FN.Framtal.Presentation._2004.Forms.RSK0103.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="546" Height="546" MaxHeight="546"
+             d:DesignWidth="344" Width="344" MaxWidth="344">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="364"/>
+            <RowDefinition Height="156"/>
+            <RowDefinition Height="26"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="144"/>
+        </Grid.ColumnDefinitions>
+
+        <views:TekjurView Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2"></views:TekjurView>
+        <views:FradratturView Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2"></views:FradratturView>
+        <DockPanel Grid.Column="0" Grid.Row="2" >
+            <TextBlock DockPanel.Dock="Right" Padding="0 0 15 1" FontSize="{StaticResource Chapter2SmallTextFontSize}" VerticalAlignment="Bottom">(tekjur  frádráttur)</TextBlock>
+            <TextBlock DockPanel.Dock="Right" FontWeight="Bold" VerticalAlignment="Bottom" TextAlignment="Right" Padding="0 0 2 0">Tekjuskattstofn</TextBlock>
+            
+        </DockPanel>
+
+        <Border Grid.Column="1" Grid.Row="5" Background="{StaticResource LightBrush}" BorderThickness="1 0 1 1" Padding="3">
+            <userControls:NumericTextBox ></userControls:NumericTextBox>
+        </Border>
+            
+    </Grid>
+</UserControl>

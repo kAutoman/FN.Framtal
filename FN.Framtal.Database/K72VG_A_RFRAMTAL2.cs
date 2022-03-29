@@ -1,0 +1,147 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace FN.Framtal.Database
+{
+    public class K72VG_A_RFRAMTAL2
+    {
+        public int _5010 { get; set; }
+        public int _5022 { get; set; }
+        public int _5027 { get; set; }
+        public int _5030 { get; set; }
+        public int _5040 { get; set; }
+        public int _5050 { get; set; }
+        public int _5060 { get; set; }
+        public int _5070 { get; set; }
+        public int _5080 { get; set; }
+        public int _5090 { get; set; }
+        public int _5100 { get; set; }
+        public int _5110 { get; set; }
+        public int _5120 { get; set; }
+        public int _5130 { get; set; }
+        public int _5140 { get; set; }
+        public int _5145 { get; set; }
+        public int _5150 { get; set; }
+        public int _5160 { get; set; }
+        public int _5170 { get; set; }
+        public int _5990 { get; set; }
+        public int _6010 { get; set; }
+        public int _6030 { get; set; }
+        public int _6290 { get; set; }
+        public int _6310 { get; set; }
+        public int _6320 { get; set; }
+        public int _6330 { get; set; }
+        public int _6360 { get; set; }
+        public int _6380 { get; set; }
+        public int _6390 { get; set; }
+        public int _6410 { get; set; }
+        public int _6590 { get; set; }
+        public int _6690 { get; set; }
+        public int _6710 { get; set; }
+        public int _6720 { get; set; }
+        public int _6730 { get; set; }
+        public int _6740 { get; set; }
+        public int _6750 { get; set; }
+        public int _6760 { get; set; }
+        public int _6770 { get; set; }
+        public int _6780 { get; set; }
+        public int _6790 { get; set; }
+        public int _6800 { get; set; }
+        public int _6810 { get; set; }
+        public int _6825 { get; set; }
+        public int _6830 { get; set; }
+        public int _6840 { get; set; }
+        public int _6990 { get; set; }
+        public int _7000 { get; set; }
+        public int _7010 { get; set; }
+        public int _7020 { get; set; }
+        public int _7030 { get; set; }
+        public int _7040 { get; set; }
+        public int _7050 { get; set; }
+        public int _7060 { get; set; }
+        public int _7070 { get; set; }
+        public int _7080 { get; set; }
+        public int _7090 { get; set; }
+        public int _7100 { get; set; }
+        public int _7120 { get; set; }
+        public int _7130 { get; set; }
+        public int _7140 { get; set; }
+        public int _7190 { get; set; }
+        public int _7990 { get; set; }
+        public int _9000 { get; set; }
+        public int _9010 { get; set; }
+        public int _7110 { get; set; }
+        public int _7105 { get; set; }
+        public int REI_OEFNISLEGAR_EIGNIR { get; set; }
+        public int REI_MANNVIRKI_OG_LODIR { get; set; }
+        public int REI_VARANL_REKSTRARFJARM_ADRIR { get; set; }
+        public int REI_EIGNAHLUTIR_INNLEND_FELOG { get; set; }
+        public int REI_EIGNAHLUTIR_ERLEND_FELOG { get; set; }
+        public int REI_HL_EIG_FE_OSJALFST_SKADILA { get; set; }
+        public int REI_KR_TENGD_ADILA_EKKI_VAXTAR { get; set; }
+        public int REI_KR_TENGDA_ADILA_VAXTAREIKN { get; set; }
+        public int REI_ADRAR_KROFUR { get; set; }
+        public int REI_HRAEFNISBIRGDIR { get; set; }
+        public int REI_VORUR_VERK_VINNSLU { get; set; }
+        public int REI_BIRGDIR_FULLUNN_VARA { get; set; }
+        public int REI_VORUBIRGDIR_ADRAR { get; set; }
+        public int REI_VIDSKIPTAKROFUR { get; set; }
+        public int REI_ADRAR_SKAMTKR_FYRFRGR_KOST { get; set; }
+        public int REI_INNEIGN_VIRDISAUKASKATTS { get; set; }
+        public int REI_VERDBREF { get; set; }
+        public int REI_HANDB_FE { get; set; }
+        public int REI_ADRAR_EIGNIR { get; set; }
+        public int REI_EIGNIR_SAMTALS { get; set; }
+        public int REF_HLUTAFE_STOFNFE { get; set; }
+        public int REF_LOGBUNDINN_VARASJODUR { get; set; }
+        public int REF_SAMTALA_EIGINFJARLIDA { get; set; }
+        public int REF_ANNAD_EIGID_FE_UPPHAF_RARS { get; set; }
+        public int REF_HAGNADUR_TAP { get; set; }
+        public int REF_REIKNAD_ENDURGJALD { get; set; }
+        public int REF_ONNUR_UTTEKT { get; set; }
+        public int REF_ONNUR_FRAMLOG_TIL_REKSTRAR { get; set; }
+        public int REF_UTHLUTADUR_ARDUR { get; set; }
+        public int REF_ADRAR_BREYTINGAR_EIGID_FE { get; set; }
+        public int REF_ANN_EIGID_FE_LOK_REIKNARS { get; set; }
+        public int REF_EIGID_FE_SAMTALS { get; set; }
+        public int RSK_EFTIRLAUNASKULDBIND { get; set; }
+        public int RSK_TEKJUSKATTSSKULDBIND { get; set; }
+        public int RSK_ERLENDAR_LANGTIMASK { get; set; }
+        public int RSK_SK_V_TENGD_ADIL_EKKI_VAXTR { get; set; }
+        public int RSK_SK_V_TENGD_ADILA_VAXTAREIK { get; set; }
+        public int RSK_ADRAR_LANGTIMASKULDIR { get; set; }
+        public int RSK_ERLENDAR_SKAMMTIMASK { get; set; }
+        public int RSK_INNBORGAN_FYRIR_AFHEND_245 { get; set; }
+        public int RSK_INNBORGAN_FYRIR_AFHEND_14 { get; set; }
+        public int RSK_VIDSKIPTASKULDIR { get; set; }
+        public int RSK_NAESTA_ARS_AFB_LANGTIMALAN { get; set; }
+        public int RSK_OGREIDDUR_VSK { get; set; }
+        public int RSK_ADR_FYRIRFRAM_INNH_TEKJUR { get; set; }
+        public int RSK_ADRAR_SKAMMTIMASK { get; set; }
+        public int RSK_SKULDIR_SAMTALS { get; set; }
+        public int REF_EIGID_FE_SAMTALS_BLS5 { get; set; }
+        public int RLE_HLUTAFE_STOFNFE { get; set; }
+        public int RLE_FRESTADAR_TEKJUR_61GR { get; set; }
+        public int RLE_VARANL_REKSTRARFJAR_ARSREI { get; set; }
+        public int RLE_OEFNISL_EIGNIR_ARSREIKN { get; set; }
+        public int RLE_FASTEIGNIR_FASTEIGNAMAT { get; set; }
+        public int RLE_ADRIR_VARANL_RFJARM_SKLOG { get; set; }
+        public int RLE_OEFNISL_EIGNIR_SKATTALOG { get; set; }
+        public int RLE_SK_LEID_HL_EIG_FE_OSJALFST { get; set; }
+        public int RLE_SKATT_LEIDR_EIGNARHL_O_FEL { get; set; }
+        public int RLE_SKATT_LEIDR_KROF_ABYRGDIR { get; set; }
+        public int RLE_EFTIRLAUNASKULDBIND { get; set; }
+        public int RLE_TEKJUSKATTSSKULDBIND { get; set; }
+        public int RLE_OFRADRATTARB_OPINBER_GJOLD { get; set; }
+        public int RLE_ADRAR_LEIDRETT_YFIRLIT { get; set; }
+        public int RLE_HREIN_EIGN_SKULD_UMFR_EIGN { get; set; }
+        public int RAL_STADGREIDSL_FJMTSK_AF_ARDI { get; set; }
+        public int RAL_STADGREID_FJMTSK_AF_VOXTUM { get; set; }
+        public int RLE_REIKNADUR_ARDUR_2000 { get; set; }
+        public int RLE_NIDURF_BIRGDA { get; set; }
+
+    }
+}

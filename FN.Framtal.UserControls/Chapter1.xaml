@@ -1,0 +1,32 @@
+﻿<UserControl x:Class="FN.Framtal.UserControls.Chapter1"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:FN.Framtal.UserControls"
+             mc:Ignorable="d"
+>
+
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Theme.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </UserControl.Resources>
+
+    <Grid Background="White">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="50" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <Canvas Width="50" Height="50" ClipToBounds="True" Background="White" Margin="10 0 0 0">
+            <Polygon Points="0 0 25 25 0 50" Margin="15,0,0,0" Fill="{StaticResource DarkBrush}" />
+            <Border Margin="1,5,10,1" SnapsToDevicePixels="True" BorderThickness="1" BorderBrush="Black" Canvas.Left="3" Canvas.Top="7" Width="24" Height="24">
+                <TextBlock Padding="0 10 0 0" x:Name="ChapterNumberTextBlock" FontSize="{StaticResource Chapter1FontSize}" FontWeight="Bold" Background="{StaticResource MediumBrush}" TextAlignment="Center" VerticalAlignment="Center" Height="48"/>
+            </Border>
+        </Canvas>
+        <TextBlock Margin="10 0 0 0" Grid.Column="1" x:Name="ChapterTextBlock"  Background="White" TextAlignment="Left" Height="24" FontSize="{StaticResource Chapter1FontSize}" FontWeight="Bold"/>
+    </Grid>
+</UserControl>

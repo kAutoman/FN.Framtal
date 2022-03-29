@@ -1,0 +1,36 @@
+﻿<UserControl x:Class="FN.Framtal.Presentation._2004.Forms.RSK0104.Views.RSK0104_02"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:controls="clr-namespace:FN.Framtal.UserControls;assembly=FN.Framtal.UserControls"
+             xmlns:views="clr-namespace:FN.Framtal.Presentation._2004.Forms.RSK0104.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="1126" Height="1126" MaxHeight="1126"
+             d:DesignWidth="794" Width="794" MaxWidth="794">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="33"/>
+            <ColumnDefinition Width="687"/>
+            <ColumnDefinition Width="33"/>
+            <ColumnDefinition Width="41"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="33"/>
+            <RowDefinition Height="160"/>
+            <RowDefinition Height="873"/>
+            <RowDefinition Height="30"/>
+        </Grid.RowDefinitions>
+        <TextBlock x:Name="textBlock" Grid.Column="1"  Grid.Row="1" Text="Rekstur" FontSize="20" FontWeight="Bold" TextWrapping="Wrap" Margin="0,6,0,0"/>
+        <Border Grid.Column="1" Grid.Row="1" Background="{StaticResource DarkBrush}" BorderThickness="0 1 1 1" Padding="3" HorizontalAlignment="Left" Margin="494,0,0,0" Width="193">
+            <controls:IntegerControl/>
+        </Border>
+        <TextBlock Grid.Column="1" Grid.Row="1" VerticalAlignment="Top" FontSize="{StaticResource Chapter2SmallTextFontSize}" Margin="494,-2,0,0" Padding="4 4" Width="193" d:LayoutOverrides="LeftMargin, RightMargin, TopMargin, BottomMargin">Kennitala</TextBlock>
+
+        <views:Tekjur Grid.Column="1" Grid.Row="2" Margin="0,1,0,1"></views:Tekjur>
+
+        <views:GjoldSundurlidunMttVsk Grid.Column="1" Grid.Row="3" Margin="0,33,0,4"></views:GjoldSundurlidunMttVsk>
+
+    </Grid>
+</UserControl>

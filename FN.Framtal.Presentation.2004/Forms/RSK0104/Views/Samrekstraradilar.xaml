@@ -1,0 +1,20 @@
+﻿<UserControl x:Class="FN.Framtal.Presentation._2004.Forms.RSK0104.Views.Samrekstraradilar"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:FN.Framtal.Presentation._2004.Forms.RSK0104.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="194" Height="194" MaxHeight="194"
+             d:DesignWidth="708" Width="708" MaxWidth="708">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="36"/>
+            <RowDefinition Height="158"/>
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Row="0" FontSize="{StaticResource Chapter1FontSize}" Text="Samrekstraraðilar," FontWeight="Bold" HorizontalAlignment="Left" Width="159" d:LayoutOverrides="HorizontalAlignment"/>
+        <TextBlock Grid.Row="0" FontSize="{StaticResource Chapter1FontSize}" Text="skipting tekna og gjalda" Margin="159,0,0,0" HorizontalAlignment="Left" Width="195"></TextBlock>
+        <DataGrid x:Name="dataGrid" Grid.Row="1"/>
+
+    </Grid>
+</UserControl>
